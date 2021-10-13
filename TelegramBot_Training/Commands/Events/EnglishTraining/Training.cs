@@ -45,7 +45,7 @@ namespace TelegramBot_Training.Commands.Events.EnglishTraining
             NextStage(Chat, EventName);
         }
 
-        public async void NextStage(Conversation Chat, string EventName) // Без ISteger тк выше объявляется этот метод и что бы по 100 раз класс не объявлять, оставил так.
+        public async void NextStage(Conversation Chat, string EventName)
         {
             Random random = new Random();
             randomValue = random.Next(0, WordsList.Count);
