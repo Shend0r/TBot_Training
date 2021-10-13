@@ -1,0 +1,16 @@
+﻿<commands>
+	<text_command trigger="/saymehi" answer="Привет" is_event="false"/>
+	<text_command trigger="/addword" answer="" is_event="true" event_name="e_addword"/>
+	<text_command trigger="/deleteword" answer="" is_event="true" event_name="e_deleteword"/>
+	<text_command trigger="/dictionary" answer="" is_event="true" event_name="e_dictionary"/>
+	<text_command trigger="/rus_to_eng" answer="" is_event="true" event_name="e_rus_to_eng"/>
+	<text_command trigger="/eng_to_rus" answer="" is_event="true" event_name="e_eng_to_rus"/>
+	<text_command trigger="/stoptraining" answer="" is_event="true" event_name="e_stoptraining"/>
+	
+	<button_command trigger="/training" answer="rus_to_eng;eng_to_rus" description="Выбирете вариант тренировки :" is_event="false"/>
+	
+	<buttons>
+		<button trigger="/training" id="rus_to_eng" text="С Русского на Английский" answer="/rus_to_eng" is_event="false" />
+		<button trigger="/training" id="eng_to_rus" text="С Английского на Русский" answer="/eng_to_rus" is_event="false" />
+	</buttons>
+</commands>
